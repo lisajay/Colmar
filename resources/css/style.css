@@ -1,27 +1,37 @@
 /* Universal styles */
 html, body {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #303030;
   margin: 0;
   padding: 0;
   line-height: 1.2;
 }
 
 h1 {
-  font-family: fantasy;
-  font-size: 2rem;
+  font-family: 'Francois One', sans-serif;;
+  font-size: 5rem;
+  line-height: 1;
+  padding-bottom: 2rem;
 }
 
 h2 {
-  font-family: Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Francois One', sans-serif;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 h3 {
+  font-family: 'Francois One', sans-serif;
   font-weight: bold;
+  font-size: 2.5rem;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
 
 /* Header styles */
 
@@ -65,7 +75,7 @@ header span {
 
 .jumbotron {
   padding: 6rem 1.5rem 2rem 1.5rem;
-  background-color: #999999;
+  background-color: #d6d6d6;
 }
 
 .jumbotron-image {
@@ -81,17 +91,33 @@ header span {
   max-width: 35%
 }
 
-button {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 1rem;
+.intro {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
 }
 
+button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #303030;
+  color: white;
+  border: none;
+  transition: all 1s ease 200ms;
+}
+
+button:hover {
+  background-color: #86DDB2;
+  color: #303030;
+}
 /* First content section styles */
 
 .first-content-block {
-  background-color: #f8c58c;
-
+  background-color: #bdf8db;
   padding: 2rem 1.5rem;
 }
 
@@ -126,6 +152,14 @@ button {
 .info-panel-text {
   width: 55%;
   padding: 1rem;
+  margin: auto 0;
+}
+
+.info-panel-text a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #86ddb2;
 }
 
 /* Start learning section styles */
