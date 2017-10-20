@@ -4,6 +4,22 @@ html, body {
   font-family: Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
 }
 
 
@@ -40,6 +56,7 @@ header span {
 }
 
 /* Main content styles */
+/* Jumbotron */
 
 .container {
   display: flex;
@@ -61,10 +78,91 @@ header span {
 }
 .jumbotron-text {
   margin: auto 1.5rem;
+  max-width: 35%
 }
 
 button {
   width: 100%;
   padding: 0.5rem;
   margin-top: 1rem;
+}
+
+/* First content section styles */
+
+.first-content-block {
+  background-color: #f8c58c;
+
+  padding: 2rem 1.5rem;
+}
+
+.keep-practicing {
+  border: 1px solid black;
+  width: 60%;
+}
+
+.keep-practicing img {
+  width: 100%;
+  height: auto;
+}
+
+.triple-panels {
+  border: 2px solid black;
+  width: 40%
+}
+
+.info-panel {
+  display: flex;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.info-panel-image {
+  width: 35%;
+}
+.info-panel-image img {
+  width: 100%;
+  height: auto;
+}
+
+.info-panel-text {
+  width: 55%;
+  padding: 1rem;
+}
+
+/* Start learning section styles */
+
+.centred-heading {
+  padding: 2rem 0;
+  justify-content: center;
+  background-color: #86ddb2;
+}
+
+.start-learning {
+  background-color: #86ddb2;
+  display: flex;
+  justify-content: center;
+  padding: 0 4.5rem;
+  flex-wrap: wrap;
+}
+
+.learning-topic {
+  border: 1px solid black;
+  width: 30%;
+  margin: 0 0.6rem 2rem 0.6rem;
+  background-color: white;
+}
+
+.learning-topic img {
+  width: 100%;
+}
+
+.learning-topic-text {
+  padding: 1rem;
+}
+
+/* Footer styles */
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between
 }
