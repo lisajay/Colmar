@@ -1,13 +1,70 @@
 /* Universal styles */
-html {
+html, body {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 /* Header styles */
 
 header {
-  margin-left: 24px;
   height: 4rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #86DDB2;
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-left: 1.5rem;
+  height: 2.5rem;
+}
+
+header nav {
+  margin-right: 1.5rem;
+}
+
+header span {
+  padding-right: 1rem;
+}
+
+/* Main content styles */
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  padding: 6rem 1.5rem 2rem 1.5rem;
+  background-color: #999999;
+}
+
+.jumbotron-image {
+  width: 60%;
+}
+
+.jumbotron-image img {
+  width: 100%;
+  height: auto;
+}
+.jumbotron-text {
+  margin: auto 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
