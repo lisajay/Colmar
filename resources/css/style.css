@@ -8,31 +8,42 @@ html, body {
   line-height: 1.2;
 }
 
+h1, h2, h3 {
+  font-family: 'Francois One', sans-serif;
+}
+
 h1 {
-  font-family: 'Francois One', sans-serif;;
   font-size: 5rem;
   line-height: 1;
   padding-bottom: 2rem;
 }
 
 h2 {
-  font-family: 'Francois One', sans-serif;
   font-size: 4rem;
-  font-weight: bold;
 }
 
 h3 {
-  font-family: 'Francois One', sans-serif;
-  font-weight: bold;
   font-size: 2.5rem;
 }
 
-p {
+h4, p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.25rem;
-  padding: 1rem 0;
 }
 
+h4 {
+  font-weight: 700;
+  padding: 1rem 0 0.5rem 0;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+}
 /* Header styles */
 
 header {
@@ -57,8 +68,23 @@ header img {
   height: 2.5rem;
 }
 
-header nav {
+.colmar {
+  font-weight: bold;
+  padding-right: 0;
+}
+
+.academy {
+  text-shadow: 2px 1px 1px #303030;
+  color: #d6d6d6;
+}
+
+nav {
   margin-right: 1.5rem;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: white;
 }
 
 header span {
@@ -87,7 +113,7 @@ header span {
   height: auto;
 }
 .jumbotron-text {
-  margin: auto 1.5rem;
+  margin: auto 2rem;
   max-width: 35%
 }
 
@@ -104,25 +130,31 @@ button {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  background-color: #303030;
+  background-color: #e57661;
   color: white;
   border: none;
-  transition: all 1s ease 200ms;
+  transition: color 1s ease 200ms;
+  transition: background-color 1s ease 200ms;
+  transition: box-shadow 100ms ease;
 }
 
 button:hover {
   background-color: #86DDB2;
   color: #303030;
 }
+
+button:active {
+  box-shadow: 5px 5px #303030;
+}
 /* First content section styles */
 
 .first-content-block {
-  background-color: #bdf8db;
+  background-color: #303030;
+  color:  #d6d6d6;
   padding: 2rem 1.5rem;
 }
 
 .keep-practicing {
-  border: 1px solid black;
   width: 60%;
 }
 
@@ -131,19 +163,34 @@ button:hover {
   height: auto;
 }
 
+.caption {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
 .triple-panels {
-  border: 2px solid black;
   width: 40%
 }
 
 .info-panel {
   display: flex;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 1rem 2rem;
+  transition: all 0.5s ease;
+}
+
+.info-panel:hover {
+  background-color: #d6d6d6;
+  color: #303030;
+}
+
+.info-panel:first-child {
+  padding: 0 0 1rem 2rem;
 }
 
 .info-panel-image {
   width: 35%;
 }
+
 .info-panel-image img {
   width: 100%;
   height: auto;
@@ -159,7 +206,17 @@ button:hover {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
-  color: #86ddb2;
+  color: #e57661;
+  transition: all 0.3s ease;
+}
+
+.info-panel-text a:hover {
+  background-color: #303030;
+  padding: 0.5rem;
+}
+
+.info-panel-text a:visited {
+  color: #7b2a3b;
 }
 
 /* Start learning section styles */
@@ -179,10 +236,14 @@ button:hover {
 }
 
 .learning-topic {
-  border: 1px solid black;
   width: 30%;
   margin: 0 0.6rem 2rem 0.6rem;
   background-color: white;
+  transition: all 0.5s ease;
+}
+
+.learning-topic:hover {
+  background-color: #e57661;
 }
 
 .learning-topic img {
@@ -193,10 +254,26 @@ button:hover {
   padding: 1rem;
 }
 
+/* Thesis exhibit section styles */
+
+.thesis {
+  background-color: #303030;
+  color: #e57661;
+  padding-bottom: 0;
+}
+
 /* Footer styles */
 
 footer {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 4rem 1.5rem;
   display: flex;
   justify-content: space-between
+}
+
+footer a {
+  padding-left: 1rem;
+}
+
+.image-link {
+  padding: 0;
 }
