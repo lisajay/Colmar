@@ -18,8 +18,21 @@ h1 {
   padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 599px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
 h2 {
   font-size: 4rem;
+}
+
+@media only screen and (max-width: 599px) {
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 h3 {
@@ -91,6 +104,31 @@ header span {
   padding-right: 1rem;
 }
 
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 599px) {
+  header {
+    display: none;
+  }
+
+  .mobile-header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e57661;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+  }
+
+  .mobile-header img {
+    margin-left: 0;
+  }
+}
+
 /* Main content styles */
 /* Jumbotron */
 
@@ -160,11 +198,6 @@ button:active {
   .jumbotron-text {
     max-width: 100%;
     margin: 2rem 1rem;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
   }
 
   .intro {
@@ -243,10 +276,22 @@ button:active {
   width: 35%;
 }
 
+.info-panel-image-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 599px) {
   .info-panel-image {
+    display: none;
+  }
+
+  .info-panel-image-mobile {
+    display: block;
     width: 100%;
-    max-height: 4rem;
+  }
+
+  .info-panel-image-mobile img {
+    width: 100%;
   }
 }
 
@@ -259,6 +304,17 @@ button:active {
   width: 55%;
   padding: 1rem;
   margin: auto 0;
+}
+
+@media only screen and (max-width: 599px) {
+  .info-panel-text {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .info-panel-text:last-child {
+    padding-bottom: 1rem;
+  }
 }
 
 .info-panel-text a {
@@ -286,12 +342,50 @@ button:active {
   background-color: #86ddb2;
 }
 
+@media only screen and (max-width: 599px) {
+  .centred-heading {
+    padding: 2rem 0 1rem 0;
+  }
+}
+
 .start-learning {
   background-color: #86ddb2;
   display: flex;
   justify-content: center;
   padding: 0 4.5rem;
   flex-wrap: wrap;
+}
+
+.start-learning-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 599px) {
+  .start-learning {
+    display: none;
+  }
+
+  .start-learning-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem 2rem 1rem;
+    background-color: #86ddb2;
+  }
+
+  .start-learning-mobile h3 {
+    font-size: 2rem;
+    padding: 0.75rem;
+  }
+
+  .learning-topic-mobile {
+    background-color: #d6d6d6;
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+
+  .learning-topic-mobile:hover {
+    background-color: #e57661;
+  }
 }
 
 .learning-topic {
@@ -320,6 +414,38 @@ button:active {
   color: #e57661;
   padding-bottom: 0;
 }
+
+@media only screen and (max-width: 599px) {
+  .thesis {
+    padding-bottom: 1rem;
+  }
+}
+
+.thesis-exhibit-section {
+  background-color: #303030;
+  color:  #d6d6d6;
+  padding: 2rem 1.5rem;
+}
+
+.thesis-video {
+  width: 60%;
+}
+
+.thesis-video-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 599px) {
+  .thesis-exhibit-section {
+    display: none;
+  }
+
+  .thesis-video-mobile {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+}
+
 
 /* Footer styles */
 
