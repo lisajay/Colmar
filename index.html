@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,12 @@
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
   </head>
   <body>
     <header>
-      <div class="branding">
+      <div class="branding" role="presentation">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo">
         <span class="colmar">COLMAR</span><span class="academy">ACADEMY</span>
       </div>
@@ -31,8 +33,8 @@
       <img src="./resources/images/ic-login.svg" alt="Sign in">
     </header>
 
-    <div class="jumbotron container">
-      <div class="jumbotron-image">
+    <div class="jumbotron container" role="presentation">
+      <div class="jumbotron-image" role="presentation">
         <img src="./resources/images/banner.jpg" alt="students sitting with books">
       </div>
       <div class="jumbotron-text">
@@ -51,12 +53,12 @@
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsam urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <p class="caption">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
-      <div class="triple-panels">
+      <div class="triple-panels" role="presentation">
         <div class="info-panel">
-          <div class="info-panel-image">
+          <div class="info-panel-image" role="presentation">
             <img src="resources/images/information-orientation.jpg" alt="aerial view of people on footpath">
           </div>
-          <div class="info-panel-image-mobile">
+          <div class="info-panel-image-mobile" role="presentation">
             <img src="resources/images/information-orientation-mobile.jpg" alt="aerial view of people on footpath">
           </div>
           <div class="info-panel-text">
@@ -67,10 +69,10 @@
         </div>
 
         <div class="info-panel">
-          <div class="info-panel-image">
+          <div class="info-panel-image" role="presentation">
             <img src="resources/images/information-campus.jpg" alt="people sitting at a large tables">
           </div>
-          <div class="info-panel-image-mobile">
+          <div class="info-panel-image-mobile" role="presentation">
             <img src="resources/images/information-campus-mobile.jpg" alt="people sitting at large tables">
           </div>
           <div class="info-panel-text">
@@ -81,10 +83,10 @@
         </div>
 
         <div class="info-panel">
-          <div class="info-panel-image">
+          <div class="info-panel-image" role="presentation">
             <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
           </div>
-          <div class="info-panel-image-mobile">
+          <div class="info-panel-image-mobile" role="presentation">
             <img src="resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
           </div>
           <div class="info-panel-text">
@@ -98,11 +100,10 @@
     </div>
 
 <!-- Start Learning section -->
-    <div class="container centred-heading">
+    <div class="container centred-heading" role="presentation">
       <h2>Start learning</h2>
     </div>
-    <div class="container start-learning">
-
+    <div class="container start-learning" role="presentation">
       <div class="learning-topic">
         <a href="./new-page.html">
           <img src="resources/images/course-software.jpg" alt="Software engineering courses">
@@ -170,7 +171,7 @@
       </div>
     </div>
 
-    <div class="container start-learning-mobile">
+    <div class="container start-learning-mobile" role="presentation">
         <div class="learning-topic-mobile">
           <h3>Software engineering</h3>
         </div>
@@ -193,10 +194,10 @@
     </div>
 
     <!-- Thesis exhibit section -->
-    <div class="container centred-heading thesis">
+    <div class="container centred-heading thesis" role="presentation">
       <h2>Thesis exhibits</h2>
     </div>
-    <div class="container thesis-exhibit-section">
+    <div class="container thesis-exhibit-section" role="presentation">
       <div class="thesis-video">
         <video width="100%" height="auto" controls>
         <source src="./resources/videos/thesis.mp4" type="video/mp4">
@@ -205,10 +206,10 @@
         <h2>Reimagine urban</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsam urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
       </div>
-      <div class="triple-panels">
+      <div class="triple-panels" role="presentation">
         <div class="info-panel">
-          <div class="info-panel-image">
-            <img src="resources/images/thesis-fisma.jpg">
+          <div class="info-panel-image" role="presentation">
+            <img src="resources/images/thesis-fisma.jpg" alt="person writing with paperwork and a phone spread around">
           </div>
           <div class="info-panel-text">
             <h3>Fisma: Design and Prototype</h3>
@@ -217,8 +218,8 @@
         </div>
 
         <div class="info-panel">
-          <div class="info-panel-image">
-            <img src="resources/images/thesis-now-and-then.jpg">
+          <div class="info-panel-image" role="presentation">
+            <img src="resources/images/thesis-now-and-then.jpg" alt="New York skyline">
           </div>
           <div class="info-panel-text">
             <h3>Now and then</h3>
@@ -234,6 +235,14 @@
       </video>
     </div>
 
+<!-- Social media section -->
+    <div class="container social" role="presentation">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x"></i></a>
+      <a href="https://twitter.com/"><i class="fa fa-twitter fa-3x"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
+    </div>
+
+<!-- Footer section -->
     <footer>
       <div class="copyright">
         <span>&copy; Colmar Academy. All rights reserved</span>
