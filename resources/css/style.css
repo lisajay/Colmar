@@ -13,7 +13,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.75vw;
   line-height: 1;
   padding-bottom: 2rem;
 }
@@ -26,7 +26,8 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5vw;
+  padding: 2rem 0;
 }
 
 @media only screen and (max-width: 599px) {
@@ -36,12 +37,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.9vw;
 }
 
 h4, p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2vw;
 }
 
 h4 {
@@ -75,6 +76,7 @@ header {
   width: 100%;
   position: fixed;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .branding {
@@ -178,8 +180,7 @@ header span {
 }
 
 .intro {
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 2.2vw;
   font-weight: 700;
 }
 
@@ -194,7 +195,7 @@ button {
   padding: 1rem;
   margin-top: 2rem;
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8vw;
   font-weight: 700;
   background-color: #e57661;
   color: white;
@@ -242,9 +243,13 @@ button:active {
   height: auto;
 }
 
+.keep-practicing p {
+  margin-top: -1rem;
+}
+
 .caption {
   font-size: 1rem;
-  padding: 0.5rem 0;
+  padding: 2rem 0 0.5rem 0;
 }
 
 .triple-panels {
@@ -355,7 +360,6 @@ button:active {
 /* Start learning section styles */
 
 .centred-heading {
-  padding: 2rem 0;
   justify-content: center;
   background-color: #86ddb2;
 }
