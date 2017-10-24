@@ -33,11 +33,18 @@ h2 {
 @media only screen and (max-width: 599px) {
   h2 {
     font-size: 2.5rem;
+    padding: 1rem 0;
   }
 }
 
 h3 {
   font-size: 1.9vw;
+}
+
+@media only screen and (max-width: 599px) {
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 h4, p {
@@ -62,7 +69,6 @@ p {
 
 a {
   text-decoration: none;
-  color: #303030;
 }
 /* Header styles */
 
@@ -101,6 +107,10 @@ header img {
 
 nav {
   margin-right: 1.5rem;
+}
+
+nav a {
+  color: #303030;
 }
 
 nav a:hover {
@@ -327,7 +337,6 @@ button:active {
 @media only screen and (max-width: 599px) {
   .info-panel-text {
     width: 100%;
-    word-wrap: break-word;
   }
 
   .info-panel-text p {
@@ -341,34 +350,28 @@ button:active {
 }
 
 .info-panel-text a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
   color: #e57661;
+}
+
+.info-panel a {
+  color: #e57661;
+  font-size: 1.25rem;
   transition: all 0.3s ease;
 }
+/* I don't understand why I had to declare the color of the <a> above twice for it to work? If I used only one of the two it reverted to the bright blue/purple? */
 
 .info-panel-text a:hover {
   background-color: #303030;
   padding: 0.5rem;
+  color: white;
 }
 
-.info-panel-text a:visited {
-  color: #7b2a3b;
-}
 
 /* Start learning section styles */
 
 .centred-heading {
   justify-content: center;
   background-color: #86ddb2;
-}
-
-@media only screen and (max-width: 599px) {
-  .centred-heading {
-    padding: 2rem 0 1rem 0;
-    text-align: center;
-  }
 }
 
 .start-learning {
@@ -438,16 +441,10 @@ button:active {
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 599px) {
-  .thesis {
-    padding-bottom: 1rem;
-  }
-}
-
 .thesis-exhibit-section {
   background-color: #303030;
   color:  #d6d6d6;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
 }
 
 .thesis-video {
@@ -478,6 +475,7 @@ button:active {
 }
 
 .social i {
+  color: #303030;
   padding: 0.5rem 1rem;
 }
 
@@ -490,6 +488,7 @@ footer {
 }
 
 footer a {
+  color: #303030;
   padding-left: 1rem;
 }
 
